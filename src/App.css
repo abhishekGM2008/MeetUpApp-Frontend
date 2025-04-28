@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.event-image {
+  width: 280px;
+  height: 230px;
+  object-fit: fill; /* Forces the image to stretch to 250x250 without preserving aspect ratio */
+}
+
