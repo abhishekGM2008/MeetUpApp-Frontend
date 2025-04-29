@@ -4,7 +4,7 @@ import useFetch from "../useFetch";
 
 const DetailsEvent = () => {
     const {eventId} = useParams()
-    const { data , loading,  error} = useFetch(`http://localhost:3000/events/${eventId}`)
+    const { data , loading,  error} = useFetch(`https://meet-up-app-backend-two.vercel.app/events/${eventId}`)
 
     return (
         <div className="container">

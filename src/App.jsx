@@ -10,7 +10,7 @@ function FrontApp() {
   const [searchIn, setIn] = useState('');
   const [showdisplay, setDisplay] = useState(true);
   const [showData, setShow] = useState(false);
-  const { data, loading, error } = useFetch("http://localhost:3000/Events");
+  const { data, loading, error } = useFetch("https://meet-up-app-backend-three.vercel.app/Events");
 
   const DataOutput = data?.eventData
     ? (selectedEvents === 'Both' || selectedEvents === 'Select'
